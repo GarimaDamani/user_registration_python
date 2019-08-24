@@ -1,6 +1,6 @@
 # Python Training Project
 
-This is a training project to help understand how to structure a python project and learn about various libs, connecting to db, making POST request and other important concepts that we should keep in mind while while writing a flask application.
+This is a training project to understand how to structure a python project and learn about various libs, connecting to db, making POST request and other important concepts that we should keep in mind while while writing a flask application.
 
 Application is expected to meet below requirements:
 
@@ -13,16 +13,16 @@ Application is expected to have proper:
 * Monitoring
 * Tests
 
-Let's name this learning project as user_registration_python.
+Let's name this learning project as pythontraining.
 
 # Starting app
 To start the Flask application please follow below steps
 * git clone `git@github.com:GarimaDamani/user_registration_python.git`
-* Create a virtualenv inside user_registration_python directory. Installation steps [here](https://medium.com/@garimajdamani/https-medium-com-garimajdamani-installing-virtualenv-on-ubuntu-16-04-108c366e4430)
+* Create a virtualenv inside pythontraining directory. Installation steps [here](https://medium.com/@garimajdamani/https-medium-com-garimajdamani-installing-virtualenv-on-ubuntu-16-04-108c366e4430)
 * Execute the below steps
 
 ```
-cd user_registration_python 
+cd pythontraining
 pip3 install -r requirements.txt
 export FLASK_APP=run.py
 export FLASK_ENV=development
@@ -33,3 +33,4 @@ flask run
 # Todo
 * Writing test cases
 * Monitoring
+
