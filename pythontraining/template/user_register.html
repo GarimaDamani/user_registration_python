@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block page_content %}
+    <h1 style="text-align:center; color:IndianRed;">Welcome to Python Training Classes</h1>
+    <h3 style="text-align:center;">Register yourself to attend the classes</h3>
+<div class="container"></div>
+    <form action="" method="POST">
+        Username<br>
+        <input type="text" placeholder="" name="username" value="{{
+          request.form.username }}">
+        <br> <br>
+        Password<br>
+        <input type="password" placeholder="" name="password" value="{{
+          request.form.password }}">
+        <br> <br>
+        Email<br>
+        <input type="email" placeholder="" name="email" value="{{
+          request.form.email }}">
+        <br> <br>
+        Phone<br>
+        <input type="phone" placeholder="" name="phone" value="{{
+          request.form.phone }}">
+        <br><br>
+        <input class="btn btn-default" type="submit" value="Register">
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+</div>
+{% endblock %}

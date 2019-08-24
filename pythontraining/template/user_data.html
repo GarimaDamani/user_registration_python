@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h2 style="text-align:center; color:IndianRed;">Hey, {{ value.username }} please find your details here</h2>
+<table style="width=100%;" align="center">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>{{ value.id }}</td>
+                <td>{{ value.username }}</td>
+                <td>{{ value.email }}</td>
+                <td>{{ value.phone }}</td>
+            </tr>
+    </tbody>
+</table>
+<br><br>
+<h2 style="text-align:center; color:IndianRed;">Please find details of other registered users</h2>
+<table style="width=100%;" align="center">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in user_list %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.username }}</td>
+                <td>{{ row.email }}</td>
+                <td>{{ row.phone }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1 style="text-align:center;color:IndianRed;">Please enter your details</h1>
+<div class="container"></div>
+    <form action="" method="POST">
+        Username<br>
+        <input type="text" placeholder="" name="username" value="{{
+          request.form.username }}">
+        <br> <br>
+        Password<br>
+        <input type="password" placeholder="" name="password" value="{{
+          request.form.password }}">
+        <br><br>
+        <input class="btn btn-default" type="submit" value="Login">
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+</div>
+{% endblock %}
